@@ -1,0 +1,46 @@
+import 'package:flutter/material.dart';
+
+/// Defines consistent text styles used across the app.
+/// Access with: `context.textStyle.headlineLarge`
+class TextStyleExtension extends ThemeExtension<TextStyleExtension> {
+  const TextStyleExtension();
+
+  TextStyle _style(double size, FontWeight weight, Color color) =>
+      TextStyle(fontSize: size, fontWeight: weight, color: color);
+
+  // Headlines
+  TextStyle get headlineLarge => _style(30, FontWeight.w600, Colors.white);
+  TextStyle get headlineMedium => _style(26, FontWeight.w600, Colors.white);
+  TextStyle get headlineSmall => _style(22, FontWeight.w600, Colors.white);
+
+  // Titles
+  TextStyle get titleLarge => _style(20, FontWeight.w500, Colors.white);
+  TextStyle get titleMedium => _style(18, FontWeight.w500, Colors.white);
+  TextStyle get titleSmall => _style(16, FontWeight.w500, Colors.white);
+
+  // Body
+  TextStyle get bodyLarge => _style(16, FontWeight.w400, Colors.white);
+  TextStyle get bodyMedium => _style(15, FontWeight.w400, Colors.white);
+  TextStyle get bodySmall => _style(13, FontWeight.w400, Colors.white);
+
+  // Labels
+  TextStyle get labelLarge => _style(14, FontWeight.w500, Colors.white);
+  TextStyle get labelMedium => _style(12, FontWeight.w500, Colors.white);
+  TextStyle get labelSmall => _style(10, FontWeight.w500, Colors.white);
+
+  // Caption
+  TextStyle get caption => _style(12, FontWeight.w400, Colors.white);
+
+  @override
+  ThemeExtension<TextStyleExtension> copyWith() => const TextStyleExtension();
+
+  @override
+  ThemeExtension<TextStyleExtension> lerp(covariant ThemeExtension<TextStyleExtension>? other, double t) =>
+      const TextStyleExtension();
+}
+
+/// Shortcut for accessing text styles via context:
+/// `context.textStyle.bodyLarge`
+extension TextStyleExtensionX on BuildContext {
+  TextStyleExtension get textStyle => Theme.of(this).extension<TextStyleExtension>()!;
+}

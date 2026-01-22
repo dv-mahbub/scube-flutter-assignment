@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:scube_flutter_assignment/core/theme/theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,7 +17,11 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return MediaQuery.withClampedTextScaling(
           maxScaleFactor: 1.5,
-          child: MaterialApp.router(debugShowCheckedModeBanner: false, themeMode: ThemeMode.system),
+          child: MaterialApp.router(
+            debugShowCheckedModeBanner: false,
+            theme: context.themeData,
+            themeMode: ThemeMode.system,
+          ),
         );
       },
     );
