@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:scube_flutter_assignment/core/service/router/router.dart';
 import 'package:scube_flutter_assignment/core/theme/theme.dart';
 
 void main() {
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
             debugShowCheckedModeBanner: false,
             theme: context.themeData,
             themeMode: ThemeMode.system,
+            routerConfig: router,
           ),
         );
       },
