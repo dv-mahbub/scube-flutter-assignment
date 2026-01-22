@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:gap/gap.dart';
+import 'package:go_router/go_router.dart';
+import 'package:scube_flutter_assignment/core/service/router/routes.dart';
 import 'package:scube_flutter_assignment/core/theme/theme.dart';
-import 'package:scube_flutter_assignment/features/widgets/logo.dart';
+import 'package:scube_flutter_assignment/features/splash/presentation/widget/splash_body.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -12,26 +13,21 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+  void initState() {
+    decideNextRoute();
+    super.initState();
+  }
+
+  void decideNextRoute() {
+    Future.delayed(const Duration(seconds: 2), () {
+      if (mounted) {
+        context.go(Routes.login);
+      }
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: context.color.primaryBlue,
-      body: SafeArea(
-        child: Center(
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Gap(70),
-              Logo(),
-              Gap(20),
-              Text("SCUBE", style: context.textStyle.headlineLarge.copyWith(color: context.color.text.secondary)),
-              Text(
-                'Control & Monitoring System',
-                style: context.textStyle.titleLarge.copyWith(color: context.color.text.secondary),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+    return Scaffold(backgroundColor: context.color.primaryBlue, body: const SplashBody());
   }
 }
