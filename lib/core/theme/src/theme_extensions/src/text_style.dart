@@ -9,27 +9,27 @@ class TextStyleExtension extends ThemeExtension<TextStyleExtension> {
       TextStyle(fontSize: size, fontWeight: weight, color: color);
 
   // Headlines
-  TextStyle get headlineLarge => _style(30, FontWeight.w600, Colors.white);
-  TextStyle get headlineMedium => _style(26, FontWeight.w600, Colors.white);
-  TextStyle get headlineSmall => _style(22, FontWeight.w600, Colors.white);
+  TextStyle get headlineLarge => _style(30, FontWeight.w600, Colors.black);
+  TextStyle get headlineMedium => _style(26, FontWeight.w600, Colors.black);
+  TextStyle get headlineSmall => _style(22, FontWeight.w600, Colors.black);
 
   // Titles
-  TextStyle get titleLarge => _style(20, FontWeight.w500, Colors.white);
-  TextStyle get titleMedium => _style(18, FontWeight.w500, Colors.white);
-  TextStyle get titleSmall => _style(16, FontWeight.w500, Colors.white);
+  TextStyle get titleLarge => _style(20, FontWeight.w500, Colors.black);
+  TextStyle get titleMedium => _style(18, FontWeight.w500, Colors.black);
+  TextStyle get titleSmall => _style(16, FontWeight.w500, Colors.black);
 
   // Body
-  TextStyle get bodyLarge => _style(16, FontWeight.w400, Colors.white);
-  TextStyle get bodyMedium => _style(15, FontWeight.w400, Colors.white);
-  TextStyle get bodySmall => _style(13, FontWeight.w400, Colors.white);
+  TextStyle get bodyLarge => _style(16, FontWeight.w400, Colors.black);
+  TextStyle get bodyMedium => _style(15, FontWeight.w400, Colors.black);
+  TextStyle get bodySmall => _style(13, FontWeight.w400, Colors.black);
 
   // Labels
-  TextStyle get labelLarge => _style(14, FontWeight.w500, Colors.white);
-  TextStyle get labelMedium => _style(12, FontWeight.w500, Colors.white);
-  TextStyle get labelSmall => _style(10, FontWeight.w500, Colors.white);
+  TextStyle get labelLarge => _style(14, FontWeight.w500, Colors.black);
+  TextStyle get labelMedium => _style(12, FontWeight.w500, Colors.black);
+  TextStyle get labelSmall => _style(10, FontWeight.w500, Colors.black);
 
   // Caption
-  TextStyle get caption => _style(12, FontWeight.w400, Colors.white);
+  TextStyle get caption => _style(12, FontWeight.w400, Colors.black);
 
   @override
   ThemeExtension<TextStyleExtension> copyWith() => const TextStyleExtension();

@@ -10,6 +10,7 @@
         "cupertino_icons",
         "flutter",
         "flutter_screenutil",
+        "gap",
         "go_router"
       ],
       "devDependencies": [
@@ -40,6 +41,13 @@
         "stream_channel",
         "test_api",
         "vector_math"
+      ]
+    },
+    {
+      "name": "gap",
+      "version": "3.0.1",
+      "dependencies": [
+        "flutter"
       ]
     },
     {

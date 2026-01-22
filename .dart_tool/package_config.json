@@ -74,6 +74,12 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "gap",
+      "rootUri": "file:///C:/Users/Mahbub/AppData/Local/Pub/Cache/hosted/pub.dev/gap-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "go_router",
       "rootUri": "file:///C:/Users/Mahbub/AppData/Local/Pub/Cache/hosted/pub.dev/go_router-17.0.1",
       "packageUri": "lib/",
