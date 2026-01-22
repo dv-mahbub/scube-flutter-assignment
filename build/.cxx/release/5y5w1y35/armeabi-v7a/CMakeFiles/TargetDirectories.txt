@@ -1,0 +1,2 @@
+C:/Users/Administrator/Documents/job_assignment/scube-flutter-assignment/build/.cxx/release/5y5w1y35/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/Administrator/Documents/job_assignment/scube-flutter-assignment/build/.cxx/release/5y5w1y35/armeabi-v7a/CMakeFiles/rebuild_cache.dir
