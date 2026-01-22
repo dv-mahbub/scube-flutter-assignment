@@ -27,7 +27,7 @@ dart pub global activate fvm
 
 1.  **Clone the repository:**
     ```bash
-    git clone <repository-url>
+    git clone https://github.com/dv-mahbub/scube-flutter-assignment.git
     cd scube-flutter-assignment
     ```
 
